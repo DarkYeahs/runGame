@@ -1,0 +1,84 @@
+{
+  "name": "run",
+  "version": "1.0.1",
+  "description": "run game",
+  "author": "Yeahs",
+  "license": "MIT",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:darkyeahs/run.git"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {},
+  "sources": {
+    "dir": "src",
+    "files": [
+      "core/Hilo.js",
+      "core/Class.js",
+      "geom/Matrix.js",
+      "event/EventMixin.js",
+      "view/Drawable.js",
+      "renderer/Renderer.js",
+      "renderer/CanvasRenderer.js",
+      "renderer/DOMRenderer.js",
+      "renderer/WebGLRenderer.js",
+      "view/View.js",
+      "view/CacheMixin.js",
+      "view/Container.js",
+      "view/Stage.js",
+      "view/Bitmap.js",
+      "view/Sprite.js",
+      "view/DOMElement.js",
+      "view/Graphics.js",
+      "view/Text.js",
+      "view/BitmapText.js",
+      "view/Button.js",
+      "util/TextureAtlas.js",
+      "util/Ticker.js",
+      "util/polyfill.js",
+      "util/drag.js",
+      "tween/Tween.js",
+      "tween/Ease.js",
+      "loader/ImageLoader.js",
+      "loader/ScriptLoader.js",
+      "loader/LoadQueue.js",
+      "media/HTMLAudio.js",
+      "media/WebAudio.js",
+      "media/WebSound.js",
+      "game/Camera.js",
+      "game/Camera3d.js",
+      "game/ParticleSystem.js"
+    ]
+  },
+  "extensions": {
+    "physics": {
+      "dir": "physics/",
+      "files": [
+        "chipmunk.js",
+        "physics.js"
+      ]
+    },
+    "dragonbones": {
+      "dir": "dragonbones/src/",
+      "files": [
+        "dragonbones.js",
+        "hiloFactory.js"
+      ]
+    }
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.9.0",
+    "jshint": "^2.9.5"
+  }
+}
